@@ -22,7 +22,7 @@ cmake_build () {
 mkdir -p lib
 
 # List of all target ABIs
-ABIS=("armeabi-v7a" "arm64-v8a" "x86" "x86_64")
+ABIS=("armeabi-v7a" "arm64-v8a")
 
 for ABI in "${ABIS[@]}"; do
   cmake_build $ABI
